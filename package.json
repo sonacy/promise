@@ -13,7 +13,7 @@
   "browserslist": "> 0.25%, not dead",
   "devDependencies": {
     "@babel/core": "^7.0.0",
-    "@babel/plugin-external-helpers": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "babel-eslint": "^9.0.0",
     "chai": "^4.1.2",
@@ -34,5 +34,6 @@
     "rollup-plugin-babel": "^4.0.2",
     "rollup-plugin-eslint": "^5.0.0",
     "rollup-plugin-node-resolve": "^3.3.0"
-  }
+  },
+  "dependencies": {}
 }

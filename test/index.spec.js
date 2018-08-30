@@ -3,25 +3,12 @@ const { expect } = require('chai')
 const Promise = require('../dist/bundle')
 
 describe('promise', () => {
-  const promise = new Promise((resolve, reject) => {
-    resolve('aaa')
-  })
-
-  it('should resolve the promise', done => {
-    promise
+  it('init promise with resolve and reject', done => {
+    new Promise((resolve, reject) => {
+      resolve('haha')
+    })
       .then(res => {
-        expect(res).equal('aaa')
-      })
-      .then(done)
-  })
-
-  it('should catch the promise', done => {
-    promise
-      .then(res => {
-        throw new Error('oops')
-      })
-      .catch(e => {
-        expect(e.message).equal('oops')
+        expect(res).equal('haha')
       })
       .then(done)
   })
