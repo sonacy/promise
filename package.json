@@ -1,0 +1,38 @@
+{
+  "name": "promise",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:sonacy/promise.git",
+  "author": "sonacy <sonacy2538@163.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c -w",
+    "test": "mocha -w test/**/*.spec.js",
+    "a+": "promises-aplus-tests ./dist/bundle.js"
+  },
+  "browserslist": "> 0.25%, not dead",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-external-helpers": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-eslint": "^9.0.0",
+    "chai": "^4.1.2",
+    "eslint": "^5.4.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-promise": "^4.0.0",
+    "eslint-plugin-standard": "^4.0.0",
+    "husky": "^0.14.3",
+    "mocha": "^5.2.0",
+    "prettier": "^1.14.2",
+    "pretty-quick": "^1.6.0",
+    "promises-aplus-tests": "^2.1.2",
+    "rollup": "^0.65.0",
+    "rollup-plugin-babel": "^4.0.2",
+    "rollup-plugin-eslint": "^5.0.0",
+    "rollup-plugin-node-resolve": "^3.3.0"
+  }
+}
